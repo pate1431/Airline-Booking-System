@@ -1,0 +1,19 @@
+﻿<Window x:Class="Midterm.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-naLabelmespace:Midterm"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid Background="#FFC6DAEA">
+        <Label x:Name="labelmm" Content="Main Menu" Margin="306,10,291,349" FontSize="36"/>
+        <StackPanel Margin="102,119,132,39">
+            <Button x:Name="cbtn" Content="Customer Page" Height="66" FontSize="18" Click="cbtn_Click"/>
+            <Button x:Name="fbtn" Content="Flight Page" Height="64" FontSize="18" Click="fbtn_Click"/>
+            <Button x:Name="abtn" Content="Airline Page" Height="64" FontSize="18" Click="abtn_Click"/>
+            <Button x:Name="pbtn" Content="Passenger Page" Height="67" FontSize="18" Click="pbtn_Click"/>
+        </StackPanel>
+        <Button x:Name="exitbtn" Content="Exit" HorizontalAlignment="Left" Margin="658,29,0,0" VerticalAlignment="Top" Height="37" Width="84" Click="exitbtn_Click"/>
+    </Grid>
+</Window>

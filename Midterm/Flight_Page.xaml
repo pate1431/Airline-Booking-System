@@ -1,0 +1,45 @@
+﻿<Window x:Class="Midterm.Flight_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="Flight_Page" Height="500" Width="800">
+    <Grid Margin="0,-1,0,1">
+        <Grid Margin="23,111,23,31"/>
+        <ListBox x:Name="flightbox" Grid.Column="1" HorizontalAlignment="Left" Height="159" Margin="25,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="501" />
+        <StackPanel HorizontalAlignment="Left" Height="184" Margin="57,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="135">
+            <Button x:Name="add" Content="Add" Height="43" Click="add_Click"/>
+            <Button x:Name="delbtn" Content="Delete" Height="43" Click="delbtn_Click"/>
+            <Button x:Name="editbtn" Content="Edit" Height="43" Click="editbtn_Click"/>
+            <Button x:Name="backbtn" Content="Back" Height="43" Click="backbtn_Click"/>
+        </StackPanel>
+        <Label Content="Flights Page" Grid.Column="1" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center" Height="63" Width="441" FontSize="36"/>
+        <Label Content="Id:" Grid.Column="1" HorizontalAlignment="Left" Margin="47,214,0,0" Grid.Row="1" VerticalAlignment="Top" Height="31" Width="31" FontSize="18"/>
+        <TextBox x:Name="idbox" Grid.Column="1" HorizontalAlignment="Left" Margin="85,220,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="25"/>
+        <Label Content="AirlineId:" Grid.Column="1" HorizontalAlignment="Left" Margin="160,214,0,0" Grid.Row="1" VerticalAlignment="Top" Height="31" Width="99" FontSize="18" RenderTransformOrigin="0.501,0.474"/>
+        <TextBox x:Name="airbox" Grid.Column="1" HorizontalAlignment="Left" Margin="244,220,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Height="25"/>
+        <Label Content="DepartureCity:" Grid.Column="1" HorizontalAlignment="Left" Margin="6,269,0,0" Grid.Row="1" VerticalAlignment="Top" Height="42" Width="134" FontSize="18"/>
+        <TextBox x:Name="deptbox" Grid.Column="1" HorizontalAlignment="Left" Margin="144,275,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Height="25"/>
+        <Label Content="DestinationCity:" Grid.Column="1" HorizontalAlignment="Left" Margin="276,269,0,0" Grid.Row="1" VerticalAlignment="Top" Height="42" Width="140" FontSize="18"/>
+        <TextBox x:Name="estbox" Grid.Column="1" HorizontalAlignment="Left" Margin="426,275,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Height="25"/>
+        <Label Content="Flighttime:" Grid.Column="1" HorizontalAlignment="Left" Margin="125,325,0,0" Grid.Row="1" VerticalAlignment="Top" Height="31" Width="105" FontSize="18"/>
+        <TextBox x:Name="timebox" Grid.Column="1" HorizontalAlignment="Left" Margin="235,331,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Height="25"/>
+        <TextBox x:Name="airbox_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="443,220,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Height="25"/>
+        <TextBox x:Name="datebox" Grid.Column="1" HorizontalAlignment="Left" Margin="443,220,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Height="25"/>
+        <Label Content="Date:" Grid.Column="1" HorizontalAlignment="Left" Margin="372,214,0,0" Grid.Row="1" VerticalAlignment="Top" Height="31" Width="60" FontSize="18" RenderTransformOrigin="0.501,0.474"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="72*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="70*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+    </Grid>
+</Window>
